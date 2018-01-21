@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Prayaan 2k18</title>
+
+
+<link rel="stylesheet" type="text/css" href="assets/styles/css/styles.css"/>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+
+
+
+
+</head>
+<body>
+
+<div class="preloader-mask">
+		<div class="preloader"></div>
+	</div>
+	<div id="container" class="wrapper">
+		<ul id="scene" class="scene unselectable"
+			data-friction-x="0.1"
+			data-friction-y="0.1"
+			data-scalar-x="25"
+			data-scalar-y="15">
+   
+			<li class="layer" data-depth="0.00"></li>
+			<li class="layer" data-depth="0.10"><div class="background"></div></li>
+   		    <li class="layer" data-depth="0.15"><div class="back2"></div></li>
+            <li class="layer" data-depth="0.20"><div class="back3"></div></li>
+            <li class="layer" data-depth="0.17"><div class="back4"></div></li>
+			<li class="layer" data-depth="0.23"><div class="back5"></div></li>
+            <li class="layer" data-depth="0.27"><div class="back6"  ></div></li>
+			<li class="layer" data-depth="0.27"><div class="back7"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light orange b phase-4"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light purple c phase-5"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light orange d phase-3"></div></li>
+			<li class="layer" data-depth="0.15"></li>
+            	
+		</ul>
+        </div>
+  
+
+
+		<section class="wrapper about " id="about" name="about">
+			<div class="cell accelerate">
+				<div class=" center accelerate">
+					<div class="panel accelerate">
+						
+							<ul class="links">
+								<li><a class="download" target="_blank" href="main/index.html">VISIT</a></li>
+								<li><a class="github" target="_blank" href="experience/index.html">Experience</a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+        <div style="visibility:hidden">
+    <audio autoplay loop>
+        <source src="audio.mp3">
+    </audio> 
+</div>
+                
+				
+				
+                
+<div class="rotate_screen">
+    <div class="rotate_container">
+      <h1>Please rotate your device</h1>
+      <div class="rotae_image"> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+        <path d="M366.24,82.96c0-18.202-14.758-32.96-32.96-32.96H176.72c-18.202,0-32.96,14.758-32.96,32.96v346.08
+
+	c0,18.202,14.758,32.96,32.96,32.96h156.56c18.202,0,32.96-14.758,32.96-32.96V82.96z M238.653,87.08h32.959
+
+	c2.277,0,4.12,1.845,4.12,4.12c0,2.275-1.843,4.12-4.12,4.12h-32.959c-2.275,0-4.12-1.845-4.12-4.12
+
+	C234.533,88.925,236.378,87.08,238.653,87.08z M253.761,442.494c-9.101,0-16.486-7.379-16.486-16.479
+
+	c0-9.102,7.385-16.48,16.486-16.48c9.101,0,16.472,7.379,16.472,16.48C270.233,435.115,262.862,442.494,253.761,442.494z
+
+	 M345.64,396.08H164.36V120.04h181.28V396.08z" fill="white"></path>
+        </svg> </div>
+    </div>
+  </div>
+
+
+
+	<!-- Scripts -->
+	<script src="assets/scripts/js/libraries.min.js"></script>
+	<script src="deploy/jquery.parallax.js"></script>
+        <script src="ventcamp.js"></script>
+
+	<script>
+
+	// jQuery Selections
+	var $html = $('html'),
+			$container = $('#container'),
+			$prompt = $('#prompt'),
+			$toggle = $('#toggle'),
+			$about = $('#about'),
+			$scene = $('#scene');
+
+	// Hide browser menu.
+	(function() {
+		setTimeout(function(){window.scrollTo(0,0);},0);
+	})();
+
+	// Setup FastClick.
+	FastClick.attach(document.body);
+
+	// Add touch functionality.
+	if (Hammer.HAS_TOUCHEVENTS) {
+		$container.hammer({drag_lock_to_axis: true});
+		_.tap($html, 'a,button,[data-tap]');
+	}
+
+	// Add touch or mouse class to html element.
+	$html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
+
+	// Resize handler.
+	(resize = function() {
+		$scene[0].style.width = window.innerWidth + 'px';
+		$scene[0].style.height = window.innerHeight + 'px';
+		if (!$prompt.hasClass('hide')) {
+			if (window.innerWidth < 600) {
+				$toggle.addClass('hide');
+			} else {
+				$toggle.removeClass('hide');
+			}
+		}
+	})();
+
+	// Attach window listeners.
+	window.onresize = _.debounce(resize, 200);
+	window.onscroll = _.debounce(resize, 200);
+
+	function showDetails() {
+		$about.removeClass('hide');
+		$toggle.removeClass('i');
+	}
+
+	function hideDetails() {
+		$about.addClass('hide');
+		$toggle.addClass('i');
+	}
+
+	// Listen for toggle click event.
+	$toggle.on('click', function(event) {
+		$toggle.hasClass('i') ? showDetails() : hideDetails();
+	});
+
+	// Pretty simple huh?
+	$scene.parallax();
+
+	// Check for orientation support.
+	setTimeout(function() {
+		if ($scene.data('mode') === 'cursor') {
+			$prompt.removeClass('hide');
+			if (window.innerWidth < 600) $toggle.addClass('hide');
+			$prompt.on('click', function(event) {
+				$prompt.addClass('hide');
+				if (window.innerWidth < 600) {
+					setTimeout(function() {
+						$toggle.removeClass('hide');
+					},1200);
+				}
+			});
+		}
+	},1000);
+
+	
+	</script>
+
+</body>
+
+
+</html>

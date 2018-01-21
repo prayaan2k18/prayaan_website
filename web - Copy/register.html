@@ -1,0 +1,343 @@
+<script type="text/javascript">
+  window.onload = function() {
+     
+        document.getElementById("reg_content").style.display = 'none';
+         document.getElementById("success_msg").style.display = 'none';   
+    };
+
+
+</script>
+<!DOCTYPE html>
+
+<html lang="en-US"> 
+<head>
+<style>
+     /*  #map {
+        height: 400px;
+        width: 100%;
+       }*/
+    </style>
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>PRAYAAN 2K18</title>   
+
+
+<meta name="description" content="Insert Your Site Description" /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>  
+
+
+
+<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="_include/css/main.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="_include/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="_include/css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+<!-- Modernizr -->
+<script src="_include/js/modernizr.js"></script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics -->
+
+
+
+<script src="_include/js/modernizr.js"></script>
+
+
+<!-- ////////////////////////////////general rules -->
+
+<link href="_include/css/form_check.css" rel="stylesheet">
+
+
+
+<div id="contact" class="page">
+<div class="container">
+
+    <div id="gen_rule">
+        <div class="row">
+                    <div class="span12">
+                        <!-- <h3 class="spec">Information Block</h3> -->
+                        <h3>General Rules</h3>
+                        <div class="info-block">
+                                
+                            <div class="info-text">
+                                
+                                <p>1.All participants are required to produce their college ID card at the time of registration.<br>
+2.Rs 200/- will be collected as registration fee. Food & accommodation will be provided only for the registered students.<br>
+3.Once registered, the participant becomes eligible to participate in any number of events/workshops/talks.<br>
+4.participants are expected to exhibit exemplary behavior. Any sort of obscene or unacceptable behavior will lead to immediate disqualification and fine.<br>
+5.The decision of the judges will be final in any event<br>
+6.The participants should adhere to the schedules. Anybody who fails to report at the scheduled time may miss their opportunity to participate in the event.<br>
+7.The organizers own every right to alter or cancel any event without prior notice, in case of any unfavorable situation.<br>
+8.Any loss/ damage caused to the institution’s property will lead to immediate disqualification and fine.<br>
+9.An individual can participate in not more than 5 events.<br>
+10.A  prayaan code will be provided at the time of online registration which is to be presented on the event day.
+</p><p class="contact-submit">
+ <a class="button" style="background-color: #021533 !important; color: white !important; "  href="#" onclick="myFunction_div();">Next</a> 
+</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+
+
+</div>
+<div class="row">
+
+<div class="span12">
+    <br>
+    <br>
+    <br>
+</div>
+    </div>
+
+
+</div>
+
+
+<!-- ////////////////////end of general rules -->
+
+<!-- ////////////////register -->
+<div id="reg_content">
+     <center><a href="events.html"   onclick="myFunction_div();"><span class="button" style="background-color: #021533 !important; color: white !important; "><span class="font-icon-arrow-round-left-circle" ></span>&nbsp;BACK</a></span></center>
+    <div class="row">
+        <div class="span12">
+            <h2>REGISTRATION</h2>
+            <form id="contact-form" class="contact-form" action="#">
+                <div class="row">
+                    <div class="span8">
+                        <p class="contact-name">
+                            <input id="stud_name" type="text" placeholder="Full Name" value="" name="name" required="1" autofocus="1" />
+                         </p>        
+                    </div>
+                    <div class="span4" id="errname">
+                    </div>                                    
+                </div>
+                <br>
+                <div class="row">
+                    <div class="span8">     
+                        <p class="contact-email">
+                            <input id="stud_email" type="text" placeholder="Email Address" value="" name="email" />
+                        </p>
+                    </div>
+                    <div class="span4" id="erremail">
+                    </div>                                    
+                </div>                  
+                    <br>
+                <div class="row">
+                    <div class="span8">     
+                        <p class="contact-email">
+                            <input id="contact_num" type="text" placeholder="Contact Number" value="" name="contact" />
+                        </p>
+                    </div>
+                    <div class="span4" id="errnum">
+                    </div>                                    
+                </div>  
+                    <br> 
+                <div class="row">
+                    <div class="span8">    
+                        <p class="contact-email">
+                         <input id="course" type="text" placeholder="Student Course" value="" name="course" />
+                        </p>
+                    </div>
+                    <div class="span4" id="errcourse">
+                    </div>                                    
+                </div>  
+                <br>
+                 <div class="row">
+                    <div class="span8">   
+                         <p class="contact-email">
+                            <input id="college" type="text" placeholder="College Name" value="" name="college" />
+                        </p>
+                    </div>
+                    <div class="span4" id="errcollege">
+                    </div>                                    
+                </div>  
+                <br>
+                <div class="row">
+                    <div class="span3">
+                       
+                        <label class="labe">Accomadation Required ?</label>
+                    </div> 
+                    <div class="span1" align="left;">   
+                        <p class="contact-email">
+                   
+                            <label class="labe"><input type="radio" name="accomadation"  value="1" class="check">&nbsp;YES</label>
+                        </p>
+                    </div>
+                   <div class="span2">
+                     <p class="contact-email">
+                        <label class="labe"> <input type="radio" name="accomadation" value="0"  checked="1"  class="check">&nbsp;NO</label></p>
+                    </div>
+                     <div class="span2">
+                        &nbsp;
+                     </div>
+                    <div class="span4">
+                   
+                    </div>                                    
+                </div>                              
+                 <br>
+                <div class="row">
+                    <div class="span3">
+                        <label class="labe"> Food Type</label>
+                    </div> 
+                    <div class="span1">   
+                        <p class="contact-email"  >
+                        <label class="labe"> 
+                            <input type="radio" name="food" value="1" class="check" />&nbsp;Veg </label>
+                       </p>
+                    </div>
+                <div class="span2">
+                    <p class="contact-email">
+                     <label class="labe">
+                        <input type="radio" name="food" checked="1" value="0" class="check" />&nbsp;Non-Veg</label>
+                   </p>
+               </div>
+                 <div class="span2">
+                    &nbsp;
+                 </div>
+                    <div class="span4">
+                    </div>                                    
+                </div>   
+                <br>   
+                 <div class="span12">
+                        <!-- <h3 class="spec">Information Block</h3> -->
+                        <h3>EVENTS</h3>
+                        <div class="info-block">
+                            <div class="row">
+                                <div class="span3">
+                                   <label class="labe"> <input type="checkbox" id="coding" class="check" />&nbsp;coding </label>     
+                                </div> 
+                                   <div class="span3">
+                                   <label class="labe"><input type="checkbox" id="best" class="check" />&nbsp;BEST PERSONALITY</label>  
+                                </div>
+                                   <div class="span3">
+                                     <label class="labe"> <input type="checkbox" id="gaming" class="check"\>&nbsp;GAMING </label>     
+                                </div>
+                            </div>    
+                            <br>
+                            <div class="row">
+                                <div class="span3">
+                                        <label class="labe"> <input type="checkbox" id="bestteam" class="check"\>&nbsp;Best Team </label>    
+                                </div> 
+                                   <div class="span3">
+                                   <label class="labe"> <input type="checkbox" id="mockcid" class="check"\>&nbsp;MOCK CID </label>
+                                </div>
+                                   <div class="span3">
+                                    <label class="labe"> <input type="checkbox" id="project" class="check"\>PROJECT PRESENTATION </label>  
+                                </div>
+                                
+                            </div>  
+                            <br>
+                             <div class="row">
+                                <div class="span3">
+                                    <label class="labe"> <input type="checkbox" id="quiz" class="check"\>&nbsp;Quiz </label></p>
+                                </div> 
+                                   <div class="span3">
+                                   <label class="labe">  <input type="checkbox" id="webhunt" class="check"\>&nbsp;Web Hunt </label>
+                                </div>
+                                   <div class="span3">
+                                     <label class="labe"> <input type="checkbox" id="photo" class="check"\>&nbsp;Photography</label> 
+                                </div>
+                            </div>  
+
+                        </div>
+                    </div>
+
+                <hr>
+            
+                <p class="contact-submit">
+                    <center><a id="contact-submit" class="submit"  id ="button_submit" href="#" onclick="valid();">Register</a></center>
+                    <!--  <div class="alert alert-success fade in" id="success_msg">
+                      <a class="close" data-dismiss="alert" href="#">&times;</a>
+                      <strong>Well done!</strong> You successfully read this important alert message. 
+                  </div> -->
+                </p>
+                <p class="contact-submit">
+                    <!--   <a href="Rules.pdf" download><span class="button"><span class="font-icon-download_2"></span> &nbsp;Download Event details</span></a>
+        </center> -->
+                   
+                </p>
+                
+            </form>
+         </div>
+     </div>
+ </div>
+
+   
+
+<!-- ////////////////end register -->
+     </div>
+     </div>   
+
+
+
+
+<script src="_include/js/stud_reg.js"></script>
+
+<script src="_include/js/toggle.js"></script> <!-- Default JS -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="_include/js/main.js"></script> <!-- Default JS -->
+
+
+
+
+<DIV ID = 'demo'></DIV>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
